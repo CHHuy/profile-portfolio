@@ -51,10 +51,22 @@ if (Modernizr.touch === true && $(window).width() <= 767) {
       event.preventDefault();
     });
   }
-
+  // function slickSlider() {
+  //   $('.js-slick').slick({
+  //     dots: true,
+  //     infinite: true,
+  //     speed: 500,
+  //     arrows: false,
+  //     autoplay: true,
+  //     autoplaySpeed: 4000
+  //     // fade: true,
+  //     // cssEase: 'linear'
+  //   })
+  // }
   function init() {
     scrollToAnchor();
     getBarwidth();
+    // slickSlider();
   }
 
   $(document).ready(function () {
@@ -64,34 +76,33 @@ if (Modernizr.touch === true && $(window).width() <= 767) {
   $(window).on('scroll', function () {
   });
 
-  $(document).ready(function(){
-    $('.center').slick({
-      centerMode: true,
-      centerPadding: '60px',
-      slidesToShow: 3,
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 3
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 1
-          }
-        }
-      ]
-    });
-  });
-
+  // $(document).ready(function(){
+  //   $('.js-slick-center').slick({
+  //     centerMode: true,
+  //     centerPadding: '60px',
+  //     slidesToShow: 3,
+  //     responsive: [
+  //       {
+  //         breakpoint: 768,
+  //         settings: {
+  //           arrows: false,
+  //           centerMode: true,
+  //           centerPadding: '40px',
+  //           slidesToShow: 3
+  //         }
+  //       },
+  //       {
+  //         breakpoint: 480,
+  //         settings: {
+  //           arrows: false,
+  //           centerMode: true,
+  //           centerPadding: '40px',
+  //           slidesToShow: 1
+  //         }
+  //       }
+  //     ]
+  //   })
+  // })n
   // if ($('.x-toTop').length) {
   //   let scrollTrigger = 100, // px
   //     backToTop = function () {

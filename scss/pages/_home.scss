@@ -1,0 +1,54 @@
+.section-intro,
+.section-music {
+  text-align: center;
+  .intro-img {
+  }
+  .intro-txt {
+    margin-bottom: 20px;
+    color: #000000;
+    font-size: 30px;
+    line-height: 2.2;
+    letter-spacing: 7px;
+    @include media-breakpoint-down(sm) {
+      font-size: 18px;
+      line-height: 2.7;
+    }
+  }
+}
+
+.section-music {
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: #ff5500;
+  .music-txt {
+    color: #000000;
+    font-size: 30px;
+    line-height: 2.2;
+    letter-spacing: 7px;
+    @include media-breakpoint-down(sm) {
+      font-size: 18px;
+      line-height: 2.7;
+    }
+  }
+}
+
+.section-ytb {
+  text-align: center;
+  margin: 50px 0;
+  .ytb-txt {
+    color: #000000;
+    font-size: 30px;
+    line-height: 2.2;
+    letter-spacing: 7px;
+    @include media-breakpoint-down(sm) {
+      font-size: 18px;
+      line-height: 2.7;
+    }
+  }
+  ul {
+    margin: 2rem 0;
+    &.pagination {
+      @include justify-content(center);
+    }
+  }
+}

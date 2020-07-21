@@ -1,3 +1,54 @@
 /* ==========================================================================
 Header
 ========================================================================== */
+.header {
+  height: 110px;
+}
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.navbar {
+  padding: 0 0;
+  border-radius: 15px;
+  font-size: 25px;
+  transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+  margin: 0 20px;
+  @include media-breakpoint-down(sm) {
+    font-size: 15px;
+  }
+  .navbar-collapse {
+    padding: 0 10px;
+  }
+}
+.navbar-brand {
+  font-size: 40px;
+  margin: 0px 40px;
+  @include media-breakpoint-down(sm) {
+    font-size: 30px;
+  }
+}
+.navbar-shrink {
+  background-color: #212529;
+  .navbar-brand {
+    font-size: 30px;
+  }
+  .navbar-collapse {
+    font-size: 20px;
+  }
+  @include media-breakpoint-down(sm) {
+    .navbar-brand {
+      font-size: 25px;
+    }
+    .navbar-collapse {
+      font-size: 15px;
+    }
+  }
+}
+
+.nav-item {
+  margin-right: 15px;
+}

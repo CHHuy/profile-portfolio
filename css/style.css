@@ -9779,7 +9779,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .row-sm > .col,
-.row-sm > [class*="col-"] {
+.row-sm > [class*='col-'] {
   padding-right: 3px;
   padding-left: 3px;
   margin-bottom: 6px;
@@ -9791,7 +9791,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .row-md > .col,
-.row-md > [class*="col-"] {
+.row-md > [class*='col-'] {
   padding-right: 5px;
   padding-left: 5px;
   margin-bottom: 10px;
@@ -10362,6 +10362,72 @@ a.text-dark:hover, a.text-dark:focus {
 /* ==========================================================================
 Header
 ========================================================================== */
+.header {
+  height: 110px;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.navbar {
+  padding: 0 0;
+  border-radius: 15px;
+  font-size: 25px;
+  transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+  margin: 0 20px;
+}
+
+@media (max-width: 767.98px) {
+  .navbar {
+    font-size: 15px;
+  }
+}
+
+.navbar .navbar-collapse {
+  padding: 0 10px;
+}
+
+.navbar-brand {
+  font-size: 40px;
+  margin: 0px 40px;
+}
+
+@media (max-width: 767.98px) {
+  .navbar-brand {
+    font-size: 30px;
+  }
+}
+
+.navbar-shrink {
+  background-color: #212529;
+}
+
+.navbar-shrink .navbar-brand {
+  font-size: 30px;
+}
+
+.navbar-shrink .navbar-collapse {
+  font-size: 20px;
+}
+
+@media (max-width: 767.98px) {
+  .navbar-shrink .navbar-brand {
+    font-size: 25px;
+  }
+  .navbar-shrink .navbar-collapse {
+    font-size: 15px;
+  }
+}
+
+.nav-item {
+  margin-right: 15px;
+}
+
 /* ==========================================================================
 Content
 ========================================================================== */
@@ -10372,5 +10438,77 @@ Content
 /* ==========================================================================
 Footer
 ========================================================================== */
+.section-intro,
+.section-music {
+  text-align: center;
+}
+
+.section-intro .intro-txt,
+.section-music .intro-txt {
+  margin-bottom: 20px;
+  color: #000000;
+  font-size: 30px;
+  line-height: 2.2;
+  letter-spacing: 7px;
+}
+
+@media (max-width: 767.98px) {
+  .section-intro .intro-txt,
+  .section-music .intro-txt {
+    font-size: 18px;
+    line-height: 2.7;
+  }
+}
+
+.section-music {
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: #ff5500;
+}
+
+.section-music .music-txt {
+  color: #000000;
+  font-size: 30px;
+  line-height: 2.2;
+  letter-spacing: 7px;
+}
+
+@media (max-width: 767.98px) {
+  .section-music .music-txt {
+    font-size: 18px;
+    line-height: 2.7;
+  }
+}
+
+.section-ytb {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.section-ytb .ytb-txt {
+  color: #000000;
+  font-size: 30px;
+  line-height: 2.2;
+  letter-spacing: 7px;
+}
+
+@media (max-width: 767.98px) {
+  .section-ytb .ytb-txt {
+    font-size: 18px;
+    line-height: 2.7;
+  }
+}
+
+.section-ytb ul {
+  margin: 2rem 0;
+}
+
+.section-ytb ul.pagination {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+}
 
 /*# sourceMappingURL=style.css.map */

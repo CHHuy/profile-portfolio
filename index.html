@@ -106,9 +106,10 @@
   </noscript>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="customs/style.css">
-  </head>
+  <link href='https://fonts.googleapis.com/css?family=Allerta' rel='stylesheet'>
+</head>
 
-<body>
+<body id="page-top">
 <div class="app-loading">
   <div class="bouncing-loader">
     <div></div>
@@ -118,90 +119,108 @@
 </div>
 <div class="wrapper" id="site_wrapper">
   <header class="header" id="header" style="font-family: galada">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="font-size: 25px;">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <div class="container">
+      <nav class="navbar navbar-expand-xl navbar-light bg-light mt-2 fixed-top" id="mainNav">
+        <a class="navbar-brand js-scroll-to ml-4" href="#page-top">Huy Che</a>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Photography</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Games</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Movies</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Music</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
+        <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      </div>
-    </nav>
-    <div class="brand-logo d-flex justify-content-center">
-      <a class="navbar-brand mr-auto ml-auto" style="font-size: 35px;" href="#"><img src="images/logo.png"
-                                                                                     style="width:45px;">Huy Che</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mr-5">
+            <li class="nav-item active">
+              <a class="nav-link js-scroll-to" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-to" href="#">Photography</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-to" href="#">Games</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-to" href="#">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-to" href="#music">Music</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-to" href="#AboutMez">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-to" href="#">Contact</a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
     </div>
   </header>
 
-  <main class="main" id="main">
-    <div class="section section-intro">
-      <div class="container">
-        <p class="text-center">This blog is for me, myself when i'm still young, dumb and broke</p>
+  <main class="main" style="font-family: Raleway">
+    <div class="section section-intro" id="intro">
+      <div class="section-intro intro-img">
+        <img src="images/mecircle.jpg" alt="">
+      </div>
+      <div class="section-intro intro-txt" id="music">
+        <span class="bg-txt">MÌNH LÀ HUY VÀ MÌNH GHI LẠI HÀNH TRÌNH TỪ BÉ ĐẾN NAY</span>
       </div>
     </div>
-    <div class="section section-slider">
+
+    <div class="section section-music">
+      <div class="section-music music-txt">
+        <span class="bg-txt">Let's play some Music</span>
+      </div>
+      <div class="bg-soundcloud">
+        <iframe width="100%" height="480" scrolling="no" frameborder="no" allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/218222611&color=%234cc0f2&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        <div
+          style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+          <a href="https://soundcloud.com/glimmerofblooms" title="Glimmer Of Blooms" target="_blank"
+             style="color: #cccccc; text-decoration: none;">Glimmer Of Blooms</a> · <a
+          href="https://soundcloud.com/glimmerofblooms/take-my-hand" title="Take My Hand" target="_blank"
+          style="color: #cccccc; text-decoration: none;">Take My Hand</a></div>
+      </div>
+    </div>
+    <div class="section section-ytb">
       <div class="container">
-<!--        <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">-->
-<!--          <div class="carousel-inner">-->
-<!--            <div class="carousel-item active" data-interval="20000">-->
-<!--              <img src="images/1.jpg" class="d-block w-100" alt="...">-->
-<!--            </div>-->
-<!--            <div class="carousel-item" data-interval="20000">-->
-<!--              <img src="images/2.jpg" class="d-block w-100" alt="...">-->
-<!--            </div>-->
-<!--            <div class="carousel-item" data-interval="20000">-->
-<!--              <img src="images/3.jpg" class="d-block w-100" alt="...">-->
-<!--            </div>-->
-<!--          </div>-->
-<!--          <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">-->
-<!--            <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
-<!--            <span class="sr-only">Previous</span>-->
-<!--          </a>-->
-<!--          <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">-->
-<!--            <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
-<!--            <span class="sr-only">Next</span>-->
-<!--          </a>-->
-<!--        </div>-->
-
-        <div class="your-class">
-          <div>your content</div>
-          <div>your content</div>
-          <div>your content</div>
+      <div class="row">
+        <div class="ytb-video col-sm-6 col-md-6">
+          <iframe width="100%" height="400" src="https://www.youtube.com/embed/7d80Uyh0AM0?list=RD7d80Uyh0AM0"
+                  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
         </div>
-
-        <div data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
-          <div><h3>1</h3></div>
-          <div><h3>2</h3></div>
-          <div><h3>3</h3></div>
-          <div><h3>4</h3></div>
-          <div><h3>5</h3></div>
-          <div><h3>6</h3></div>
+        <div class="ytb-video col-sm-6 col-md-6">
+          <iframe width="100%" height="400" src="https://www.youtube.com/embed/5dZtLRuDXzE?list=LLiPUBjreRRILUgQ77AEJCuA"
+                  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
         </div>
       </div>
+        <nav aria-label="Page navigation">
+          <ul class="pagination">
+            <li class="page-item disabled"><a class="page-link">First</a></li>
+            <li class="page-item disabled">
+              <a class="page-link" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+                <span class="sr-only">Previous</span>
+              </a>
+            </li>
+            <li class="page-item active"><a class="page-link">1</a></li>
+            <li class="page-item"><a class="page-link">2</a></li>
+            <li class="page-item"><a class="page-link">3</a></li>
+            <li class="page-item"><a class="page-link">4</a></li>
+            <li class="page-item"><a class="page-link">5</a></li>
+            <li class="page-item">
+              <a class="page-link" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+                <span class="sr-only">Next</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link">Last</a></li>
+          </ul>
+        </nav>
+    </div>
     </div>
   </main>
 
