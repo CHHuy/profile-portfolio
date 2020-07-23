@@ -2,6 +2,10 @@
 .section-music {
   text-align: center;
   .intro-img {
+    img{
+      width: 100%;
+      max-width: 500px;
+    }
   }
   .intro-txt {
     margin-bottom: 20px;
@@ -19,7 +23,7 @@
 .section-music {
   text-align: center;
   margin-bottom: 30px;
-  background-color: #ff5500;
+  background-color: $primary;
   .music-txt {
     color: #000000;
     font-size: 30px;
@@ -45,10 +49,26 @@
       line-height: 2.7;
     }
   }
+  .ytb-video{
+    padding-bottom: $grid-gutter-width / 2;
+  }
   ul {
     margin: 2rem 0;
     &.pagination {
       @include justify-content(center);
     }
   }
+}
+
+
+.back-to-top {
+  background-color: $primary;
+  @include media-breakpoint-down(sm) {
+    font-size: 10px;
+    z-index: $zindex-modal-backdrop - 1;
+  }
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: none;
 }

@@ -82,3 +82,35 @@ Content
 //  }
 //
 //}
+
+.pagination {
+  @include flex-wrap(wrap);
+  @include justify-content(center);
+
+  .page-item.active {
+    .page-link {
+      background-color: $primary;
+    }
+  }
+
+  .page-item {
+    padding: 0 5px;
+    cursor: pointer;
+    .page-link {
+      padding: 5px 10px;
+      border: 0 solid;
+      border-radius: 40px;
+    }
+  }
+}
+.section-photography{
+  .slider-item{
+    img{
+      width: 100%;
+      height:100%;
+    }
+  }
+}
+.slick-prev:before, .slick-next:before{
+  color:red;
+}

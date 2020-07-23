@@ -104,7 +104,7 @@
   <noscript>
     <link rel="stylesheet" href="dist/app.min.css">
   </noscript>
-  <link rel="stylesheet" href="css/style.css">
+<!--  <link rel="stylesheet" href="css/style.css">-->
   <link rel="stylesheet" href="customs/style.css">
   <link href='https://fonts.googleapis.com/css?family=Allerta' rel='stylesheet'>
 </head>
@@ -134,6 +134,9 @@
               <a class="nav-link js-scroll-to" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
+              <a class="nav-link js-scroll-to" href="#music">Music</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link js-scroll-to" href="#">Photography</a>
             </li>
             <li class="nav-item">
@@ -143,10 +146,7 @@
               <a class="nav-link js-scroll-to" href="#">Movies</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-to" href="#music">Music</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-to" href="#AboutMez">About Me</a>
+              <a class="nav-link js-scroll-to" href="#AboutMe">About Me</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-to" href="#">Contact</a>
@@ -160,11 +160,13 @@
 
   <main class="main" style="font-family: Raleway">
     <div class="section section-intro" id="intro">
-      <div class="section-intro intro-img">
-        <img src="images/mecircle.jpg" alt="">
-      </div>
-      <div class="section-intro intro-txt" id="music">
-        <span class="bg-txt">MÌNH LÀ HUY VÀ MÌNH GHI LẠI HÀNH TRÌNH TỪ BÉ ĐẾN NAY</span>
+      <div class="container-fluid">
+        <div class="section-intro intro-img">
+          <img src="images/mecircle.jpg" alt="">
+        </div>
+        <div class="section-intro intro-txt" id="music">
+          <span class="bg-txt">MÌNH LÀ HUY VÀ MÌNH GHI LẠI HÀNH TRÌNH TỪ BÉ ĐẾN NAY</span>
+        </div>
       </div>
     </div>
 
@@ -185,18 +187,35 @@
     </div>
     <div class="section section-ytb">
       <div class="container">
-      <div class="row">
-        <div class="ytb-video col-sm-6 col-md-6">
-          <iframe width="100%" height="400" src="https://www.youtube.com/embed/7d80Uyh0AM0?list=RD7d80Uyh0AM0"
-                  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe>
+        <div class="section-ytb ytb-txt">
+          <span class="bg-txt">Music Video</span>
+          <br>
+          <span class="bg-txt"></span>
         </div>
-        <div class="ytb-video col-sm-6 col-md-6">
-          <iframe width="100%" height="400" src="https://www.youtube.com/embed/5dZtLRuDXzE?list=LLiPUBjreRRILUgQ77AEJCuA"
-                  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe>
+        <div class="row">
+          <div class="ytb-video col-sm-6 col-md-6">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/7d80Uyh0AM0?list=RD7d80Uyh0AM0"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+          </div>
+          <div class="ytb-video col-sm-6 col-md-6">
+            <iframe width="100%" height="400"
+                    src="https://www.youtube.com/embed/5dZtLRuDXzE?list=LLiPUBjreRRILUgQ77AEJCuA"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+          </div>
+
+          <div class="ytb-video col-sm-6 col-md-6">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/tza_EeTlg7A" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+          </div>
+          <div class="ytb-video col-sm-6 col-md-6">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/fHfirUHkjQA" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+          </div>
         </div>
-      </div>
         <nav aria-label="Page navigation">
           <ul class="pagination">
             <li class="page-item disabled"><a class="page-link">First</a></li>
@@ -220,10 +239,27 @@
             <li class="page-item"><a class="page-link">Last</a></li>
           </ul>
         </nav>
+      </div>
     </div>
+    <div class="section section-photography">
+      <div class="container-fluid">
+        <div class="fb-post js-slick-responsive">
+          <div class="slider-item"><img src="images/me%20(2).JPG"></div>
+          <div class="slider-item"><img src="images/me%20(4).JPG"></div>
+          <div class="slider-item"><img src="images/me%20(3).JPG"></div>
+          <div class="slider-item"><img src="images/astronous%20(2).JPG"></div>
+          <div class="slider-item"><img src="images/astronous%20(3).JPG"></div>
+          <div class="slider-item"><img src="images/quote%20(1).JPEG"></div>
+          <div class="slider-item"><img src="images/shoes.jpg"></div>
+          <div class="slider-item"><img src="images/quote%20(2).JPEG"></div>
+          <div class="slider-item"><img src="images/"></div>
+          <div class="slider-item"><img src="images/"></div>
+        </div>
+      </div>
     </div>
   </main>
-
+  <a id="back-to-top" href="#" class="btn btn-lg back-to-top" role="button"><i
+    class="fas fa-chevron-up"></i></a>
   <footer class="footer" id="footer">
   </footer>
 </div>
@@ -238,14 +274,13 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-
 <!-- Core JavaScript -->
 <script src="dist/core.min.js"></script>
 <script src="third_party/modernizr.min.js"></script>
 <!-- End Core JavaScript -->
 
 <!-- JavaScript -->
-<!--<script src="dist/app.min.js"></script>-->
+<!--  <script src="dist/app.min.js"></script>-->
 <script src="js/common.js"></script>
 <script src="customs/script.js"></script>
 <!-- End JavaScript -->
