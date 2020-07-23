@@ -25,13 +25,7 @@
   margin-bottom: 30px;
   background-color: $primary;
   .music-txt {
-    color: #000000;
-    font-size: 30px;
-    line-height: 2.2;
-    letter-spacing: 7px;
     @include media-breakpoint-down(sm) {
-      font-size: 18px;
-      line-height: 2.7;
     }
   }
 }
@@ -40,13 +34,7 @@
   text-align: center;
   margin: 50px 0;
   .ytb-txt {
-    color: #000000;
-    font-size: 30px;
-    line-height: 2.2;
-    letter-spacing: 7px;
     @include media-breakpoint-down(sm) {
-      font-size: 18px;
-      line-height: 2.7;
     }
   }
   .ytb-video{
@@ -59,8 +47,26 @@
     }
   }
 }
+.section-photography{
+  text-align: center;
+  margin: 60px 30px;
+  .photography-txt {
+    @include media-breakpoint-down(sm) {
+    }
+  }
+  .slider-item{
+    img{
+      width: 100%;
+      height:100%;
+    }
+  }
+}
 
-
+.section-movie{
+  .movie-txt{
+    text-align: center;
+  }
+}
 .back-to-top {
   background-color: $primary;
   @include media-breakpoint-down(sm) {
@@ -71,4 +77,21 @@
   bottom: 25px;
   right: 25px;
   display: none;
+}
+
+.js-slick-responsive{
+  width:100%;
+  img{
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+  }
+}
+
+.list-group{
+  .list-group-item{
+    img{
+      width: 110px;
+    }
+  }
 }

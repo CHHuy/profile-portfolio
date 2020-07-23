@@ -10375,10 +10375,11 @@ Header
 }
 
 .navbar {
+  background: #ffffff;
   padding: 0 0;
   border-radius: 15px;
   font-size: 25px;
-  transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+  transition: padding-top 1s ease-in-out, padding-bottom 1s ease-in-out;
   margin: 0 20px;
 }
 
@@ -10404,7 +10405,8 @@ Header
 }
 
 .navbar-shrink {
-  background-color: #212529;
+  transition: all 2s ease 0.2s;
+  background-color: #ff5500;
 }
 
 .navbar-shrink .navbar-brand {
@@ -10462,13 +10464,43 @@ Content
   border-radius: 40px;
 }
 
+.section-photography {
+  text-align: center;
+  margin: 50px 30px;
+}
+
 .section-photography .slider-item img {
   width: 100%;
   height: 100%;
 }
 
+.slick-prev, .slick-next {
+  width: 35px;
+  height: 35px;
+}
+
 .slick-prev:before, .slick-next:before {
-  color: red;
+  color: #ff5500;
+  font-size: 30px;
+}
+
+.title-txt {
+  font-weight: bold;
+  color: #000000;
+  font-size: 30px;
+  line-height: 2.2;
+  letter-spacing: 7px;
+}
+
+@media (max-width: 767.98px) {
+  .title-txt {
+    font-size: 18px;
+    line-height: 2.7;
+  }
+}
+
+.body-txt {
+  font-weight: 700;
 }
 
 /* ==========================================================================
@@ -10508,37 +10540,9 @@ Footer
   background-color: #ff5500;
 }
 
-.section-music .music-txt {
-  color: #000000;
-  font-size: 30px;
-  line-height: 2.2;
-  letter-spacing: 7px;
-}
-
-@media (max-width: 767.98px) {
-  .section-music .music-txt {
-    font-size: 18px;
-    line-height: 2.7;
-  }
-}
-
 .section-ytb {
   text-align: center;
   margin: 50px 0;
-}
-
-.section-ytb .ytb-txt {
-  color: #000000;
-  font-size: 30px;
-  line-height: 2.2;
-  letter-spacing: 7px;
-}
-
-@media (max-width: 767.98px) {
-  .section-ytb .ytb-txt {
-    font-size: 18px;
-    line-height: 2.7;
-  }
 }
 
 .section-ytb .ytb-video {
@@ -10557,6 +10561,20 @@ Footer
   justify-content: center;
 }
 
+.section-photography {
+  text-align: center;
+  margin: 60px 30px;
+}
+
+.section-photography .slider-item img {
+  width: 100%;
+  height: 100%;
+}
+
+.section-movie .movie-txt {
+  text-align: center;
+}
+
 .back-to-top {
   background-color: #ff5500;
   position: fixed;
@@ -10570,6 +10588,20 @@ Footer
     font-size: 10px;
     z-index: 1039;
   }
+}
+
+.js-slick-responsive {
+  width: 100%;
+}
+
+.js-slick-responsive img {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+}
+
+.list-group .list-group-item img {
+  width: 110px;
 }
 
 /*# sourceMappingURL=style.css.map */

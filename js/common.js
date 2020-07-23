@@ -69,30 +69,27 @@ if (Modernizr.touch === true && $(window).width() <= 767) {
   }
   function slickSlider() {
     $('.js-slick-responsive').slick({
-      dots: true,
       infinite: true,
       speed: 300,
       slidesToShow: 3,
       slidesToScroll: 3,
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 1140,
           settings: {
             slidesToShow: 3,
             slidesToScroll: 3,
-            infinite: true,
-            dots: true
           }
         },
         {
-          breakpoint: 600,
+          breakpoint: 920,
           settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3
+            slidesToShow: 2,
+            slidesToScroll: 2
           }
         },
         {
-          breakpoint: 480,
+          breakpoint: 720,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1

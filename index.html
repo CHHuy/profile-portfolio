@@ -104,7 +104,7 @@
   <noscript>
     <link rel="stylesheet" href="dist/app.min.css">
   </noscript>
-<!--  <link rel="stylesheet" href="css/style.css">-->
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="customs/style.css">
   <link href='https://fonts.googleapis.com/css?family=Allerta' rel='stylesheet'>
 </head>
@@ -120,7 +120,7 @@
 <div class="wrapper" id="site_wrapper">
   <header class="header" id="header" style="font-family: galada">
     <div class="container">
-      <nav class="navbar navbar-expand-xl navbar-light bg-light mt-2 fixed-top" id="mainNav">
+      <nav class="navbar navbar-expand-xl navbar-light mt-2 fixed-top" id="mainNav">
         <a class="navbar-brand js-scroll-to ml-4" href="#page-top">Huy Che</a>
 
         <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -137,7 +137,7 @@
               <a class="nav-link js-scroll-to" href="#music">Music</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-to" href="#">Photography</a>
+              <a class="nav-link js-scroll-to" href="#photography">Photography</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-to" href="#">Games</a>
@@ -165,14 +165,14 @@
           <img src="images/mecircle.jpg" alt="">
         </div>
         <div class="section-intro intro-txt" id="music">
-          <span class="bg-txt">MÌNH LÀ HUY VÀ MÌNH GHI LẠI HÀNH TRÌNH TỪ BÉ ĐẾN NAY</span>
+          <span class="body-txt">MÌNH LÀ HUY VÀ MÌNH GHI LẠI HÀNH TRÌNH TỪ BÉ ĐẾN NAY</span>
         </div>
       </div>
     </div>
 
     <div class="section section-music">
       <div class="section-music music-txt">
-        <span class="bg-txt">Let's play some Music</span>
+        <span class="title-txt">Let's play some Music</span>
       </div>
       <div class="bg-soundcloud">
         <iframe width="100%" height="480" scrolling="no" frameborder="no" allow="autoplay"
@@ -188,9 +188,9 @@
     <div class="section section-ytb">
       <div class="container">
         <div class="section-ytb ytb-txt">
-          <span class="bg-txt">Music Video</span>
+          <span class="title-txt">Music Video</span>
           <br>
-          <span class="bg-txt"></span>
+          <span class="title-txt"></span>
         </div>
         <div class="row">
           <div class="ytb-video col-sm-6 col-md-6">
@@ -216,7 +216,7 @@
                     allowfullscreen></iframe>
           </div>
         </div>
-        <nav aria-label="Page navigation">
+        <nav aria-label="Page navigation" id="photography">
           <ul class="pagination">
             <li class="page-item disabled"><a class="page-link">First</a></li>
             <li class="page-item disabled">
@@ -242,19 +242,100 @@
       </div>
     </div>
     <div class="section section-photography">
-      <div class="container-fluid">
-        <div class="fb-post js-slick-responsive">
-          <div class="slider-item"><img src="images/me%20(2).JPG"></div>
-          <div class="slider-item"><img src="images/me%20(4).JPG"></div>
-          <div class="slider-item"><img src="images/me%20(3).JPG"></div>
-          <div class="slider-item"><img src="images/astronous%20(2).JPG"></div>
-          <div class="slider-item"><img src="images/astronous%20(3).JPG"></div>
-          <div class="slider-item"><img src="images/quote%20(1).JPEG"></div>
-          <div class="slider-item"><img src="images/shoes.jpg"></div>
-          <div class="slider-item"><img src="images/quote%20(2).JPEG"></div>
-          <div class="slider-item"><img src="images/"></div>
-          <div class="slider-item"><img src="images/"></div>
+      <div class="container">
+        <div class="section-photography photography-txt">
+          <span class="title-txt">
+            Photography
+          </span>
         </div>
+        <div class="js-slick-responsive">
+          <div class="slick-item"><img src="images/me%20(2).JPG"></div>
+          <div class="slick-item"><img src="images/me%20(4).JPG"></div>
+          <div class="slick-item"><img src="images/me%20(3).JPG"></div>
+          <div class="slick-item"><img src="images/astronous%20(2).JPG"></div>
+          <div class="slick-item"><img src="images/astronous%20(1).JPG"></div>
+          <div class="slick-item"><img src="images/astronous%20(3).JPG"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section section-movie">
+      <div class="container">
+        <div class="section-movie movie-txt">
+          <span class="title-txt">Movies</span>
+          <br>
+          <span class="title-txt">List of movies that make me cry T.T </span>
+
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <div class="media">
+              <img class="align-self-center mr-3" src="images/greenmile_poster.jpg" alt="Generic placeholder image">
+              <div class="media-body">
+                <h5 class="mt-0">The Green Mile (1999)</h5>
+                <p>The lives of guards on Death Row are affected by one of their charges: a black man accused of child
+                  murder and rape, yet who has a mysterious gift.</p>
+                <p class="mb-0">Director: Frank Darabont <br>
+                  Writers: Stephen King (novel), Frank Darabont (screenplay) <br>
+                  Stars: Tom Hanks, Michael Clarke Duncan, David Morse</p>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="media">
+              <img class="align-self-center mr-3" src="images/fiftyfirstdates_poster.jpg"
+                   alt="Generic placeholder image">
+              <div class="media-body">
+                <h5 class="mt-0">50 First Dates (2004)</h5>
+                <p>Henry Roth is a man afraid of commitment up until he meets the beautiful Lucy. They hit it off and
+                  Henry think he's finally found the girl of his dreams, until he discovers she has short-term memory
+                  loss and forgets him the next day.</p>
+                <p class="mb-0">Director: Peter Segal<br>
+                  Writer: George Wing<br>
+                  Stars: Adam Sandler, Drew Barrymore, Rob Schneider</p>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="media">
+              <img class="align-self-center mr-2" src="images/benjamin_poster.jpg" alt="Generic placeholder image">
+              <div class="media-body">
+                <h5 class="mt-0">The Curious Case of Benjamin Button (2008)</h5>
+                <p>Tells the story of Benjamin Button, a man who starts aging backwards with consequences.
+                </p>
+                <p class="mb-0">Director: David Fincher <br>
+                  Writers: Eric Roth (screenplay), Eric Roth (story) <br>
+                  Stars: Brad Pitt, Cate Blanchett, Tilda Swinton</p>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="media">
+              <img class="align-self-center mr-3" src="images/thevow_poster.jpg" alt="Generic placeholder image">
+              <div class="media-body">
+                <h5 class="mt-0">The Vow (2012)</h5>
+                <p>A car accident puts Paige in a coma, and when she wakes up with severe memory loss, her husband Leo
+                  works to win her heart again.</p>
+                <p class="mb-0">Director: Michael Sucsy<br>
+                  Writers: Abby Kohn (screenplay), Marc Silverstein (screenplay) <br>
+                  Stars: Rachel McAdams, Channing Tatum, Sam Neill </p>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="media">
+              <img class="align-self-center mr-3" src="images/12years_poster.jpg" alt="Generic placeholder image">
+              <div class="media-body">
+                <h5 class="mt-0">12 Years a Slave (2013)</h5>
+                <p>In the antebellum United States, Solomon Northup, a free black man from upstate New York, is abducted
+                  and sold into slavery.</p>
+                <p class="mb-0">Director: Steve McQueen <br>
+                  Writers: John Ridley (screenplay by), Solomon Northup (based on "Twelve Years a Slave" by) <br>
+                  Stars: Chiwetel Ejiofor, Michael Kenneth Williams, Michael Fassbender</p>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </main>

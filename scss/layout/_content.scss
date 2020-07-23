@@ -104,6 +104,8 @@ Content
   }
 }
 .section-photography{
+  text-align: center;
+  margin: 50px 30px;
   .slider-item{
     img{
       width: 100%;
@@ -111,6 +113,26 @@ Content
     }
   }
 }
+.slick-prev,.slick-next{
+  width: 35px;
+  height: 35px;
+}
 .slick-prev:before, .slick-next:before{
-  color:red;
+  color: $primary;
+  font-size: 30px;
+}
+
+.title-txt{
+  font-weight: bold;
+  color: #000000;
+  font-size: 30px;
+  line-height: 2.2;
+  letter-spacing: 7px;
+  @include media-breakpoint-down(sm) {
+    font-size: 18px;
+    line-height: 2.7;
+  }
+}
+.body-txt{
+  font-weight: 700;
 }
