@@ -103,36 +103,40 @@ Content
     }
   }
 }
-.section-photography{
+.section-photography {
   text-align: center;
   margin: 50px 30px;
-  .slider-item{
-    img{
+  .slider-item {
+    img {
       width: 100%;
-      height:100%;
+      height: 100%;
     }
   }
 }
-.slick-prev,.slick-next{
+.slick-prev,
+.slick-next {
   width: 35px;
   height: 35px;
 }
-.slick-prev:before, .slick-next:before{
+.slick-prev:before,
+.slick-next:before {
   color: $primary;
   font-size: 30px;
 }
 
-.title-txt{
+.title-txt {
   font-weight: bold;
   color: #000000;
   font-size: 30px;
   line-height: 2.2;
   letter-spacing: 7px;
   @include media-breakpoint-down(sm) {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 2.7;
   }
 }
-.body-txt{
+.body-txt {
   font-weight: 700;
+  font-size: 20px;
 }
+

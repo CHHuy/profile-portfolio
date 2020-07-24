@@ -11,8 +11,8 @@ if (Modernizr.touch === true && $(window).width() <= 767) {
 
 }
 
-(function ($) {
-  'use strict';
+(function($) {
+  'use strict'
 
 
   /* ==================================================
@@ -20,26 +20,26 @@ if (Modernizr.touch === true && $(window).width() <= 767) {
   ===================================================*/
   function getBarwidth() {
     // Create the measurement node
-    let scrollDiv = document.createElement('div');
-    scrollDiv.className = 'scrollbar-measure';
-    document.body.appendChild(scrollDiv);
+    let scrollDiv = document.createElement('div')
+    scrollDiv.className = 'scrollbar-measure'
+    document.body.appendChild(scrollDiv)
 
     // Get the scrollbar width
-    let scrollbarWidth = scrollDiv.offsetWidth - scrollDiv.clientWidth;
+    let scrollbarWidth = scrollDiv.offsetWidth - scrollDiv.clientWidth
     //console.warn(scrollbarWidth); // Mac:  15
 
     // Delete the DIV
-    document.body.removeChild(scrollDiv);
-    return scrollbarWidth;
+    document.body.removeChild(scrollDiv)
+    return scrollbarWidth
   }
 
   /* ==================================================
   # Smooth Scroll
   ===================================================*/
   function scrollToAnchor() {
-    $('.js-scroll-to').on('click', function (event) {
-      let $anchor = $(this);
-      let headerH = '0';
+    $('.js-scroll-to').on('click', function(event) {
+      let $anchor = $(this)
+      let headerH = '0'
       $('html, body')
         .stop()
         .animate(
@@ -47,10 +47,11 @@ if (Modernizr.touch === true && $(window).width() <= 767) {
             scrollTop: $($anchor.attr('href')).offset().top - headerH + 'px'
           },
           1000
-        );
-      event.preventDefault();
-    });
+        )
+      event.preventDefault()
+    })
   }
+
   function scrollToTop() {
     $(window).scroll(function() {
       if ($(this).scrollTop() > 50) {
@@ -67,6 +68,7 @@ if (Modernizr.touch === true && $(window).width() <= 767) {
       return false
     })
   }
+
   function slickSlider() {
     $('.js-slick-responsive').slick({
       infinite: true,
@@ -78,7 +80,7 @@ if (Modernizr.touch === true && $(window).width() <= 767) {
           breakpoint: 1140,
           settings: {
             slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToScroll: 3
           }
         },
         {
@@ -99,21 +101,40 @@ if (Modernizr.touch === true && $(window).width() <= 767) {
         // settings: "unslick"
         // instead of a settings object
       ]
-    });
+    })
   }
+
+  // Activate scrollspy to add active class to navbar items on scroll
+  function scrollSpy() {
+    $('body').scrollspy({
+      target: '#mainNav',
+      offset: 74
+    })
+  }
+
+  function navbarCollapse() {
+    if ($('#mainNav').offset().top > 100) {
+      $('#mainNav').addClass('navbar-shrink')
+    } else {
+      $('#mainNav').removeClass('navbar-shrink')
+    }
+  }
+
   function init() {
-    scrollToAnchor();
-    getBarwidth();
-    scrollToTop();
-    slickSlider();
+    scrollToAnchor()
+    getBarwidth()
+    scrollToTop()
+    slickSlider()
+    scrollSpy()
   }
 
-  $(document).ready(function () {
-    init();
-  }); // end document ready function
+  $(document).ready(function() {
+    init()
+  }) // end document ready function
 
-  $(window).on('scroll', function () {
-  });
+  $(window).on('scroll', function() {
+    navbarCollapse()
+  })
 
 
-})(jQuery); // End jQuery
+})(jQuery) // End jQuery
